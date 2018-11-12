@@ -12,3 +12,11 @@ services:
     image: oauth2-webapi
     ports:
       - 8081:80
+
+  client-app:
+    build: ./OAuth2.ClientApp
+    image: oauth2-clientapp
+    depends_on:
+      - id-server
+      - web-api
+    restart: on-failure
