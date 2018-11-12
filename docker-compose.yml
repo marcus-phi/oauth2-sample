@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  id-server:
+    build: ./OAuth2.IdentityServer
+    image: oauth2-identityserver
+    ports:
+      - 8080:80
+
+  web-api:
+    build: ./OAuth2.WebApi
+    image: oauth2-webapi
+    ports:
+      - 8081:80
