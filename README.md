@@ -1,6 +1,6 @@
 ## OAuth 2.0 Sample
 
-A working setup to learn about OAuth 2.0
+A working setup to learn about OAuth 2.0 based on documentation from identityserver.io
 
 #### Projects:
 
